@@ -24,25 +24,25 @@ The `SeaTurtleID2022` dataset, consisting of 8,729 images of 438 unique sea turt
 
 1. **Enhanced Preprocessing and Augmentation**
 
-Subtle data augmentations, including horizontal flips and rotation, were used to increase dataset diversity while maintaining realistic conditions. Normalization and resizing standardized input images, improving model training stability.
+	Subtle data augmentations, including horizontal flips and rotation, were used to increase dataset diversity while maintaining realistic conditions. Normalization and resizing standardized input images, improving model training stability.
 
 2. **Custom Loss Functions**
 
-We introduced a combined loss function, incorporating Cross-Entropy and Focal Tversky Loss, to address class imbalance. This improved segmentation accuracy, particularly for small and challenging regions like flippers and head boundaries.
+	We introduced a combined loss function, incorporating Cross-Entropy and Focal Tversky Loss, to address class imbalance. This improved segmentation accuracy, particularly for small and challenging regions like flippers and head boundaries.
 
 3. **Integration of Attention Mechanisms**
 
-Attention mechanisms, such as CBAM and SEBlock, were integrated to guide the models in focusing on relevant spatial regions and important feature channels. This reduced the impact of background noise and enhanced detail segmentation.
+	Attention mechanisms, such as CBAM and SEBlock, were integrated to guide the models in focusing on relevant spatial regions and important feature channels. This reduced the impact of background noise and enhanced detail segmentation.
 
 4. **Model Optimizations**
 
-U-Net Enhancements: Adding ResNet-34 as a backbone improved feature extraction for challenging images, and CBAM refined spatial focus.
-
-Mask R-CNN Enhancements: Using FPN for multi-scale feature extraction improved instance segmentation in complex scenes. SEBlock was explored to enhance feature representation but required careful tuning to avoid overfitting.
+	U-Net Enhancements: Adding ResNet-34 as a backbone improved feature extraction for challenging images, and CBAM refined spatial focus.
+	
+	Mask R-CNN Enhancements: Using FPN for multi-scale feature extraction improved instance segmentation in complex scenes. SEBlock was explored to enhance feature representation but required careful tuning to avoid overfitting.
 
 5. **Computational Efficiency**
 
-Efficient learning rate schedulers and adaptive optimizers like AdamW helped balance computational cost with performance. Early stopping ensured efficient training, reducing overfitting risks.
+	Efficient learning rate schedulers and adaptive optimizers like AdamW helped balance computational cost with performance. Early stopping ensured efficient training, reducing overfitting risks.
 
 
 ## Method
