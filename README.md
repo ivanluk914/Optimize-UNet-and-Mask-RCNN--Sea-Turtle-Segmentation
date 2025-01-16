@@ -63,8 +63,9 @@ Implementation Details
 
 ## Results
 
-	•	U-Net with CBAM achieved mIoU: 0.8316.
-	•	Mask R-CNN (ResNet-50 + FPN) achieved the best mIoU: 0.9117.
+•	U-Net with CBAM achieved mIoU: 0.8316.
+
+•	Mask R-CNN (ResNet-50 + FPN) achieved the best mIoU: 0.9117.
 
 Both models demonstrated unique strengths, with U-Net excelling in detail-oriented tasks and Mask R-CNN proving superior for complex, instance-level segmentation in noisy underwater environments.
 
@@ -72,14 +73,13 @@ Detailed results are documented in the report.
 
 ## Directory Contents
 ```
-├── UNet_final.ipynb                    # U-Net model notebook with optimizations
-├── Mrcnn_with_ResNet50_final.ipynb     # Mask R-CNN model with ResNet50 backbone notebook
-├── Mrcnn_with_attention_final.ipynb    # Mask R-CNN model with attention mechanisms notebook
-├── Dataset Exploration.html            # HTML export of the dataset exploration and mask visualization notebook
-├── requirements.txt                    # Dependencies installation file
-├── report.pdf                          # Report file
-└── README.md                           # Documentation file
-
+├── UNet_final.ipynb                    
+├── Mrcnn_with_ResNet50_final.ipynb     
+├── Mrcnn_with_attention_final.ipynb   
+├── Dataset Exploration.html           
+├── requirements.txt                  
+├── report.pdf                        
+└── README.md                         
 ```
 
 •   **UNet_final.ipynb**: This notebook contains our implementation of the U-Net model for segmentation. It includes parameter settings, optimizations, and final results.
@@ -105,17 +105,15 @@ Detailed results are documented in the report.
 These notebooks are compatible with **Python 3.9** and **Python 3.10**. Using one of these versions ensures compatibility with all dependencies listed in requirements.txt and provides optimal stability and performance.
 
 To check your Python version, use:
-    ```sh
-    python --version
-    ```
+```sh
+python --version
+```
 
-**Recommendation**: Create a virtual environment and install the dependencies listed in requirements.txt.
-    ```sh
-    python3 -m venv env
-    source env/bin/activate         # for Mac or Linux
-    source env\Scripts\activate     # for Windows
-    pip install -r requirements.txt
-    ```
+**Recommendation**: Install the dependencies listed in requirements.txt.
+
+```sh
+pip install -r requirements.txt
+```
 
 2.	Running the Notebooks:
 \
