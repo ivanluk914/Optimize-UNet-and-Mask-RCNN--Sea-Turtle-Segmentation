@@ -1,7 +1,5 @@
 # Sea Turtle Segmentation
 
-## Overview
-
 This repository contains the essential files for our project focused on segmenting sea turtles from images, specifically targeting the head, flippers, and carapace. This README provides guidance on the project’s deliverables and instructions on using the included files.
 
 ## Background
@@ -42,6 +40,8 @@ The `SeaTurtleID2022` dataset, consisting of 8,729 images of 438 unique sea turt
 
 5. **Computational Efficiency**
 
+	Reduce training sample size when training Mask R-CNN model.
+ 	
 	Efficient learning rate schedulers and adaptive optimizers like AdamW helped balance computational cost with performance. Early stopping ensured efficient training, reducing overfitting risks.
 
 
