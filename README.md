@@ -48,18 +48,20 @@ The `SeaTurtleID2022` dataset, consisting of 8,729 images of 438 unique sea turt
 ## Method
 
 We implemented and compared two primary models: **U-Net** and **Mask R-CNN**, with additional enhancements:
-	1.	U-Net Variants
-	•	Baseline U-Net: Employed the standard architecture with cross-entropy loss and Adam optimizer.
-	•	Enhanced U-Net: Introduced a combined loss function (Cross-Entropy + Focal Tversky Loss) to address class imbalance, and used ResNet-34 as a backbone for improved feature extraction.
-	•	Attention Mechanisms: Incorporated CBAM (Channel and Spatial Attention Modules) to emphasize relevant spatial regions, significantly improving segmentation precision.
-	2.	Mask R-CNN Variants
-	•	Baseline Mask R-CNN: Utilized a ResNet-50 backbone paired with a Feature Pyramid Network (FPN) for multi-scale feature extraction.
-	•	Attention-Enhanced Mask R-CNN: Added SEBlock attention mechanisms to further refine feature learning within the network.
+
+1.	U-Net Variants
+•	Baseline U-Net: Employed the standard architecture with cross-entropy loss and Adam optimizer.
+•	Enhanced U-Net: Introduced a combined loss function (Cross-Entropy + Focal Tversky Loss) to address class imbalance, and used ResNet-34 as a backbone for improved feature extraction.
+•	Attention Mechanisms: Incorporated CBAM (Channel and Spatial Attention Modules) to emphasize relevant spatial regions, significantly improving segmentation precision.
+
+2.	Mask R-CNN Variants
+•	Baseline Mask R-CNN: Utilized a ResNet-50 backbone paired with a Feature Pyramid Network (FPN) for multi-scale feature extraction.
+•	Attention-Enhanced Mask R-CNN: Added SEBlock attention mechanisms to further refine feature learning within the network.
 
 Implementation Details
-	•	Models were implemented in PyTorch and trained on NVIDIA RTX 4070 and 4090 GPUs.
-	•	Optimizers such as AdamW (with learning rate scheduling) and SGD were employed to enhance training stability.
-	•	Extensive evaluation metrics included mean Intersection over Union (mIoU) for key regions (e.g., turtle body, flippers, head), with additional assessments of computational efficiency.
+•	Models were implemented in PyTorch and trained on NVIDIA RTX 4070 and 4090 GPUs.
+•	Optimizers such as AdamW (with learning rate scheduling) and SGD were employed to enhance training stability.
+•	Extensive evaluation metrics included mean Intersection over Union (mIoU) for key regions (e.g., turtle body, flippers, head), with additional assessments of computational efficiency.
 
 ## Results
 
