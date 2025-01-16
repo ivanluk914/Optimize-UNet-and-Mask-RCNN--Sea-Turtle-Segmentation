@@ -14,7 +14,7 @@ The `SeaTurtleID2022` dataset, consisting of 8,729 images of 438 unique sea turt
 
 - **Data Quality**: Variability in underwater image quality and lighting conditions.
 - **Occlusions**: Parts of the turtle may be occluded by other objects or by itself.
-- **Class Imbalance**: Some parts of the turtle (e.g., flippers) may be underrepresented in the dataset.
+- **Class Imbalance**: Some parts of the turtle (e.g., head) is underrepresented in the dataset.
 - **Complex Backgrounds**: The presence of complex and varying backgrounds in the images.
 - **Computational Resources**: High computational power required for training complex models.
 
